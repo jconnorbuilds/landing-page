@@ -8,26 +8,60 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    /* align-items: center; */
-    flex-direction: column;
-    color: #F9FAF8;
     background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
-.header {
-    padding: 0 50px;
-    flex: 1;
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    background-color: #3882F6;
+    color: #E5E7Eb;
+    padding: 5px 12px;
+    width: 100px;
+}
+
+.header,
+.hero,
+.information,
+.body-quote,
+.cta,
+.footer {
     display: flex;
+    flex: auto;
+    padding: 75px 50px;
     justify-content: center;
 }
 
-ul {
+.container {
+    display: flex;
+    justify-content: center;
     width: 800px;
+}
+
+.header {
+    padding: 0 100px;
+    flex: 1;
+}
+
+.header .container {
+    justify-content: flex-end;
+}
+
+.header ul {
+    /* max-width: 800px; */
     list-style-type: none;
     align-items: center;
-    justify-content: flex-end;
-    padding: 0 50px;
+    padding: 0;
     display: flex;
     flex: 1;
     gap: 18px;
@@ -46,29 +80,14 @@ ul {
     font-weight: 100;
 }
 
-a {
-    text-decoration: none;
-}
-
-button {
-    border: none;
-    border-radius: 4px;
-    background-color: #3882F6;
-    color: #E5E7Eb;
-    padding: 5px 12px;
-    width: 100px;
-}
-
 .hero {
-    display: flex;
-    flex: auto;
-    padding: 75px 50px;
-    margin: auto;
+    background-color: #1F2937;
+    /* margin: auto; */
+    padding: 75px 100px;
 }
 
-.hero-container {
-    display: flex;
-    width: 800px;
+.hero .container {
+    flex-wrap: flex;
 }
 
 .hero-text {
@@ -82,7 +101,6 @@ button {
 }
 
 .hero img {
-    flex: auto;
     max-width: 400px;
     max-height: auto;
     align-self: center;
@@ -93,6 +111,10 @@ button {
     background-color: #F9FAF8;
     color: #1F2937;
     padding: 0px 00px 50px;
+}
+
+.information .container {
+    display: block;
     text-align: center;
 }
 
@@ -104,12 +126,14 @@ button {
 .information .card {
     font-size: 14px;
     font-weight: 100;
-    width: 180px;
+    width: 150px;
 }
 
 .cards-container {
     display: flex;
-    padding: 0 50px;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 50px;
     justify-content: center;
     gap: 24px;
 }
@@ -124,13 +148,15 @@ button {
 .body-quote {
     background-color: #E5E7Eb;
     color: #1F2937;
-    padding: 75px 0px;
+    padding: 50px 0px;
     flex: 1;
 }
 
-.quote-container {
-    width: 600px;
-    padding: 0px;
+.body-quote .container {
+    display: block;
+    max-width: 800px;
+    min-width: 600px;
+    padding: 0 100px;
     margin: auto;
 }
 
@@ -149,8 +175,6 @@ button {
     background-color: #F9FAF8;
     color: #E5E7Eb;
     padding: 75px 200px;
-    display: flex;
-    justify-content: center;
 }
 
 .cta-container {
@@ -177,9 +201,9 @@ button {
 }
 
 .footer {
+    background-color: #1F2937;
+    padding: 0;
     height: 75px;
     font-size: 0.8rem;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
