@@ -1,5 +1,5 @@
 html {
-    /* box-sizing: border-box;  */
+    box-sizing: border-box; 
 }
 
 * {
@@ -61,7 +61,7 @@ button {
 .hero {
     display: flex;
     flex: auto;
-    padding: 75px 200px;
+    padding: 75px 00px;
     width: 800px;
     margin: auto;
 }
@@ -133,12 +133,44 @@ button {
 
 .quote-text {
     font-size: 36px;
-    font-weight: 100;
+    font-weight: light;
     font-style: italic;
 }
 
 .quote-citation {
-    font-weight: 700;
+    font-weight: bold;
     text-align: right;
+}
+
+.cta {
+    background-color: #F9FAF8;
+    color: #E5E7Eb;
+    padding: 75px 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container {
+    background-color: #3882F6;
+    border-radius: 5px;
+    min-width: 500px;
+    max-width: 800px;
+    padding: 30px 80px;
+    /* margin: auto; */
+    flex: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-text-main {
+    font-weight: bold;
+}
+
+.cta-text-secondary {
+    font-size: 0.8rem;
+}
+
+.cta button {
+    border: 2px solid #E5E7Eb;
 }
 
