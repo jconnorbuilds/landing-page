@@ -5,21 +5,23 @@ html {
 * {
     box-sizing: inherit;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     flex-direction: column;
     color: #F9FAF8;
     background-color: #1F2937;
 }
 
+.container {
+    width: 800px;
+}
+
 .header {
-    padding: 0 200px;
+    /* padding: 0 18px; */
     flex: 1;
     display: flex;
-    justify-content: center;
 }
 
 ul {
@@ -61,10 +63,9 @@ button {
 
 .hero {
     display: flex;
-    flex: auto;
-    padding: 75px 200px;
-    justify-content: center;
-
+    flex: 1;
+    padding: 75px 0px;
+    /* justify-content: center; */
 }
 
 .hero-text {
@@ -87,34 +88,8 @@ button {
     align-self: center;
 }
 
-.information {
-    background-color: #F9FAF8;
-    color: #1F2937;
-    padding: 0px 200px 50px;
-    text-align: center;
-}
-
-.information h2 {
-    font-size: 36px;
-    font-weight: 900;
-    
-}
-
-.information .card {
-    font-size: 14px;
-    font-weight: 100;
-    max-width: 150px;
-}
-
-.cards-container {
+.body-middle {
     display: flex;
-    justify-content: center;
-    gap: 24px;
-}
-
-.card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 5px;
-    border: 2px solid #3882F6
+    /* justify-content: center; */
+    background-color: #F9FAF8
 }
